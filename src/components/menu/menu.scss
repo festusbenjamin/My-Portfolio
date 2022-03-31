@@ -1,0 +1,41 @@
+.menu{
+    width: 250px;
+    height: 100vh;
+    background-color: darkslateblue;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &.active{
+        right: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 25px;
+        font-weight: 400;
+        color: white;
+        width: 60%;
+
+        li{
+            margin-bottom: 25px;
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+            a:hover{
+                color: chocolate;
+                font-weight: 600;
+            }
+        }
+    }
+}
